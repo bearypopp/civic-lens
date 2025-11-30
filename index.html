@@ -10,11 +10,11 @@
   <meta name="author" content="Civic Lens">
 
   <!-- ADD Open Graph Meta for title, description, image, url, type -->
-  <meta property="" og:title" content="Civic Lens News" />
-  <meta property="" og:image"
-    content="https://www.vecteezy.com/vector-art/10586271-breaking-news-background-business-or-technology-template-breaking-news-text-on-dark-blue-with-light-effect-digital-technology-tv-news-show-broadcast-vector-design" />
-  <meta property="" og:url" content="https://www.CivicLensNews.com" />
-  <meta property="" og:type" content="website" />
+  <meta property="og:title" content="Civic Lens News">
+  <meta property="og:image"
+    content="https://www.vecteezy.com/vector-art/10586271-breaking-news-background-business-or-technology-template-breaking-news-text-on-dark-blue-with-light-effect-digital-technology-tv-news-show-broadcast-vector-design">
+  <meta property="og:url" content="https://www.CivicLensNews.com">
+  <meta property="og:type" content="website" >
   <!-- ADD link to stylesheet -->
   <link rel="stylesheet" href="styles.css">
   <title>Civic Lens</title>
@@ -121,31 +121,48 @@
   <h2>Stay Informed. Stay Empowered.</h2>
   <p>Receive text messages with the news you want to know.</p>
 
-  Name
-  
-  Mobile
+  <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+  <div class="contact-info">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" required>
+    </div>
 
-  Notification Preferences
+    <div class="form-group">
+      <label for="mobile">Mobile</label>
+      <input id="mobile" name="mobile" type="tel" required>
+    </div>
+  </div>
 
-  Breaking News
-  Politics
-  Weather
-  Sports
-  Entertainment
-  World
-  Financial
+  <fieldset class="notifications">
+    <legend>Notification Preferences</legend>
 
-  Subscribe
+    <div class="checkbox">
+      <label><input type="checkbox" name="prefs" value="breaking"> Breaking News</label>
+      <label><input type="checkbox" name="prefs" value="politics"> Politics</label>
+      <label><input type="checkbox" name="prefs" value="weather"> Weather</label>
+      <label><input type="checkbox" name="prefs" value="sports"> Sports</label>
+      <label><input type="checkbox" name="prefs" value="entertainment"> Entertainment</label>
+      <label><input type="checkbox" name="prefs" value="world"> World</label>
+      <label><input type="checkbox" name="prefs" value="financial"> Financial</label>
+    </div>
+  </fieldset>
 
-  Follow Us
-  Twitter/X
-  Instagram
-  YouTube
-  TikTok
-  LinkedIn
+  <button type="submit" class="subscribe-btn">SUBSCRIBE</button>
+</form>
 
-  &copy; 2025 Civic Lens. All rights reserved.
+<footer class="socials">
+  <h2>Follow Us</h2>
+<ul class="social-list">
+    <li><a href="#" class="social-btn">Twitter/X</a></li>
+    <li><a href="#" class="social-btn">Instagram</a></li>
+    <li><a href="#" class="social-btn">YouTube</a></li>
+    <li><a href="#" class="social-btn">TikTok</a></li>
+    <li><a href="#" class="social-btn">LinkedIn</a></li>
+  </ul>
 
+  <p>&copy; 2025 Civic Lens. All rights reserved.</p>
+</footer>
 
   <script>
     const toggleButton = document.getElementById('theme-toggle');
