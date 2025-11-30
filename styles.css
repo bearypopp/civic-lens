@@ -86,11 +86,60 @@ body.dark-mode {
 }
 
 /* ///ADD/// Skip Link Styles */
+.skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
 
+.skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
+}
 /* ///ADD/// Navigation Styles */
-
+nav {
+  background: var(--blue-bulletin);
+  padding: 10px 20px;
+}
+nav ul{
+  display: flex;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav a{
+  display: inline-block;
+  color: var(--watchdog-white);
+  background-color: var(--news-flash);
+  text-decoration: none;
+  padding: 8px 14px;
+  border: 1px solid var(--news-flash);
+}
+nav a:hover, nav a:focus{
+  background-color: var(--blue-bulletin);
+  border-color: var(--news-flash);
+}
+.menu-button {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
 /* ///ADD/// Global Layout Styles */
 
+header p, h1{
+  background-color: var(--blue-bulletin);
+}
 /* ///ADD/// Global Text Styles */
 
 
