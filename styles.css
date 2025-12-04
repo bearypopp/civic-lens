@@ -470,7 +470,7 @@ h2 {
 .subscribe-btn {
   height: 2.5rem;
   background-color: var(--blue-bulletin);
-  border: 6px solid var(--truth-text);
+  border: 1px solid var(--truth-text);
   cursor: pointer;
   box-shadow: 0 4px 6px var(--truth-text);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
